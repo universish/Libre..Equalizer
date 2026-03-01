@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- simple preference structure with dark theme option -->
+    <PreferenceCategory android:title="Display">
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="dark_theme"
+            android:title="Dark theme"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

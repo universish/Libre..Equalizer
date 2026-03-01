@@ -1,0 +1,39 @@
+buildscript {
+    ext.kotlin_version = '1.9.10'
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.3.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://jitpack.io'
+        }
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+def keystoreProps = new Properties()
+def keystoreFile = rootProject.file("releasekey.properties")
+if (keystoreFile.exists()) {
+    keystoreProps.load(new FileInputStream(keystoreFile))
+}
+
+// debug signing configuration
+
+def debugProps = new Properties()
+def debugFile = rootProject.file("debugkey.properties")
+if (debugFile.exists()) {
+    debugProps.load(new FileInputStream(debugFile))
+}

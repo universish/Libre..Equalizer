@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+// load keystore properties (release and debug) specifically for this module
+ext.keystoreProps = new Properties()
+ext.keystoreFile = rootProject.file("releasekey.properties")
+if (keystoreFile.exists()) {
+    keystoreProps.load(new FileInputStream(keystoreFile))
+}
+
+ext.debugProps = new Properties()
+ext.debugFile = rootProject.file("debugkey.properties")
+if (debugFile.exists()) {
+    debugProps.load(new FileInputStream(debugFile))
+}
+
+android {
+    namespace "com.libre_universish.equalizer"
+    compileSdkVersion 34
+    // buildToolsVersion is no longer necessary; AGP uses default compatible version
+    defaultConfig {
+        applicationId "com.libre_universish.equalizer"
+        minSdkVersion 26
+        targetSdkVersion 34
+        versionCode 2
+        versionName "1.1.8"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    signingConfigs {
+        debug {
+            if (debugFile.exists()) {
+                storeFile file(debugProps['storeFile'])
+                storePassword debugProps['storePassword']
+                keyAlias debugProps['keyAlias']
+                keyPassword debugProps['keyPassword']
+            }
+        }
+        release {
+            if (keystoreFile.exists()) {
+                storeFile file(keystoreProps['storeFile'])
+                storePassword keystoreProps['storePassword']
+                keyAlias keystoreProps['keyAlias']
+                keyPassword keystoreProps['keyPassword']
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    // customize output APK names
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def verName = variant.versionName
+            def verCode = variant.versionCode
+            outputFileName = "libre_universish-v${verName}-${verCode}-${variant.name}.apk"
+        }
+    }
+}
+
+dependencies {
+    // migrate support libraries to AndroidX
+    implementation 'androidx.core:core:1.10.1'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.5.1', {
+        exclude group: 'androidx.test', module: 'test-annotations'
+    })
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    // androidx libraries updated to latest stable versions above
+    implementation 'androidx.preference:preference:1.2.1'
+    implementation 'com.github.marcinmoskala:ArcSeekBar:0.31' // original working version
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+// ensure consistent Kotlin stdlib version to avoid duplicates from transitive libs
+configurations.all {
+    resolutionStrategy {
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.10'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10'
+    }
+}
