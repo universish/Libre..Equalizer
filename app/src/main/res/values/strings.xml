@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Libre Equalizer</string>
+    <string name="enable_equalizer">Enable equalizer</string>
+    <string name="presets">Presets</string>
     <string name="title_activity_settings">Settings</string>
 
 
@@ -8,15 +10,16 @@
     <string name="support_summary">Thank you for installing this app. If you liked my work you can donate. Any contribution removes ads.</string>
     <string name="purchase_thanks">Thank you for purchasing. All ads are removed.</string>
     <string name="privacy_policy">Privacy Policy</string>
-    <string name="privacy_text">This project is free, libre, privacy-focused and open-source.\n\n- No trackers, analytics, or advertising libraries are included.\n- No internet permission is requested by the app.\n- Local data: logs and debug reports are stored locally; debug reports are sanitized (emails, phone numbers, tokens masked) before user shares them manually.\n\nIf you have concerns, open an issue at the repository and we\'ll address them.</string>
+    <string name="privacy_text">This project is free, libre, privacy-focused and open-source.\n\n- No trackers, analytics, or advertising libraries are included.\n- No internet permission is requested by the app.\n- Local data: logs and debug reports are stored locally; debug reports are sanitized (emails, phone numbers, tokens masked) before user shares them manually.\n- When the built‑in diagnostics tool runs it creates two files: one with raw log data and one with personal information removed. You are asked to compare them before sending; only the sanitized file is attached to the email.\n\nIf you have concerns, open an issue at the repository and we\'ll address them.</string>
     <string name="licenses">Licenses</string>
-    <string name="report_bugs">Report Bugs</string>
+    <string name="report_bugs">Report Bug / Diagnostics</string>
     <string name="fork_on_github">Fork on GitHub</string>
     <string name="any_donation_will_remove_the_ads">Any donation will remove the ads.</string>
     <string name="donate">Donate</string>
     <string name="leave_a_positive_rating_on_google_play">Leave a positive rating on Google Play.</string>
     <string name="rate">Rate</string>
     <string name="an_open_source_light_weight_equalizer_for_all_devices">An Open Source, Light Weight equalization tool for all devices.</string>
+    <string name="disableOther">Disabling all effects...</string>
 
     <!-- Menu labels -->
     <string name="menu_settings">Settings</string>

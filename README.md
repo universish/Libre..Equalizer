@@ -78,6 +78,7 @@ The GPLv3 licence has been removed from the Flat Equalizer [main repository](htt
 ## 🚀 Modifications by universish
 
 * **Privacy First:** All trackers, analytics, and crash reporting libraries have been removed.
+* A built‑in diagnostics workflow lets users collect logs, compare raw vs sanitized versions, and send a sanitized report via email without any network code.
 * **Ad-Free:** Google AdMob code and dependencies have been completely stripped out.
 * **Debloated:** Removed In-App Billing (IAB) libraries and internet permissions.
 * **Rebranded:** Package name updated to `com.libre_universish.equalizer`.

@@ -12,48 +12,60 @@
  */
 package com.libre_universish.equalizer;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.media.audiofx.BassBoost;
 import android.media.audiofx.Equalizer;
+import android.media.audiofx.LoudnessEnhancer;
 import android.media.audiofx.Virtualizer;
 import androidx.preference.PreferenceManager;
 import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
+import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
+import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.marcinmoskala.arcseekbar.ArcSeekBar;
 import com.marcinmoskala.arcseekbar.ProgressListener;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
 
     Switch enabled = null;
-    Switch enableBass, enableVirtual;
+    Switch enableBass, enableVirtual, enableLoud;
+    Spinner spinner;
+    ArrayList<String> eqPreset;
+    int spinnerPos = 0;
+    boolean dontcall = false;
+    boolean canPreset;
+    LinearLayout presetView, loudnessView;
 
     Equalizer eq = null;
     BassBoost bb = null;
     Virtualizer virtualizer = null;
+    LoudnessEnhancer loudnessEnhancer = null;
 
     int min_level = 0;
     int max_level = 100;
 
     static final int MAX_SLIDERS = 5; // Must match the XML layout
     SeekBar sliders[] = new SeekBar[MAX_SLIDERS];
-    ArcSeekBar bassSlider,virtualSlider;
+    ArcSeekBar bassSlider, virtualSlider, loudSlider;
     TextView slider_labels[] = new TextView[MAX_SLIDERS];
     int num_sliders = 0;
+    boolean canEnable = true;
 
 
     @Override
@@ -363,6 +375,10 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         updateSliders();
         updateBassBoost();
         updateVirtualizer();
+        updateLoudness();
+        if (spinner != null) {
+            spinner.setSelection(spinnerPos);
+        }
 
     }
 
@@ -400,41 +416,144 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         }
     }
 
-    public void saveChanges(){
+    public void updateLoudness() {
+        if (loudSlider != null) {
+            if (loudnessEnhancer != null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                try {
+                    loudSlider.setProgress((int) loudnessEnhancer.getTargetGain());
+                } catch (Throwable e) {
+                    e.printStackTrace();
+                }
+            } else {
+                loudSlider.setProgress(0);
+            }
+        }
+    }
+
+    public void saveChanges() {
         SharedPreferences myPreferences
                 = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor myEditor = myPreferences.edit();
         myEditor.putBoolean("initial", true);
-        myEditor.putBoolean("eqswitch", enabled.isChecked());
-        myEditor.putBoolean("bbswitch", enableBass.isChecked());
-        myEditor.putBoolean("virswitch", enableVirtual.isChecked());
-        Log.d("WOW", "actual bass level *************************** "+bb.getRoundedStrength());
-        Log.d("WOW", "actual vir level *************************** "+ virtualizer.getRoundedStrength() );
+        myEditor.putBoolean("eqswitch", enabled != null && enabled.isChecked());
+        myEditor.putBoolean("bbswitch", enableBass != null && enableBass.isChecked());
+        myEditor.putBoolean("virswitch", enableVirtual != null && enableVirtual.isChecked());
+        myEditor.putBoolean("loudswitch", enableLoud != null && enableLoud.isChecked());
+        myEditor.putInt("spinnerpos", spinnerPos);
+        try {
+            if (bb != null)
+                myEditor.putInt("bbslider", (int) bb.getRoundedStrength());
+            if (virtualizer != null)
+                myEditor.putInt("virslider", (int) virtualizer.getRoundedStrength());
+            if (loudnessEnhancer != null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+                myEditor.putFloat("loudslider", loudnessEnhancer.getTargetGain());
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
 
-        myEditor.putInt("bbslider", (int)bb.getRoundedStrength());
-        myEditor.putInt("virslider", (int)virtualizer.getRoundedStrength());
-        myEditor.putInt("slider0", 100 * eq.getBandLevel((short)0) / (max_level - min_level) + 50);
-        myEditor.putInt("slider1", 100 * eq.getBandLevel((short)1) / (max_level - min_level) + 50);
-        myEditor.putInt("slider2", 100 * eq.getBandLevel((short)2) / (max_level - min_level) + 50);
-        myEditor.putInt("slider3", 100 * eq.getBandLevel((short)3) / (max_level - min_level) + 50);
-        myEditor.putInt("slider4", 100 * eq.getBandLevel((short)4) / (max_level - min_level) + 50);
-        myEditor.commit();
+        if ((spinnerPos == eqPreset.size() - 1) && !dontcall) {
+            myEditor.putInt("slider0", 100 * eq.getBandLevel((short) 0) / (max_level - min_level) + 50);
+            myEditor.putInt("slider1", 100 * eq.getBandLevel((short) 1) / (max_level - min_level) + 50);
+            myEditor.putInt("slider2", 100 * eq.getBandLevel((short) 2) / (max_level - min_level) + 50);
+            myEditor.putInt("slider3", 100 * eq.getBandLevel((short) 3) / (max_level - min_level) + 50);
+            myEditor.putInt("slider4", 100 * eq.getBandLevel((short) 4) / (max_level - min_level) + 50);
+        }
+        myEditor.apply();
     }
-    public void applyChanges(){
+
+    public void applyChanges() {
         SharedPreferences myPreferences
-            = PreferenceManager.getDefaultSharedPreferences(this);
-        enabled.setChecked(myPreferences.getBoolean("eqswitch",true));
-        enableBass.setChecked(myPreferences.getBoolean("bbswitch",true));
-        enableVirtual.setChecked(myPreferences.getBoolean("virswitch",true));
-        eq.setBandLevel((short)0,(short)(min_level+(max_level-min_level)*myPreferences.getInt("slider0",0) / 100));
-        eq.setBandLevel((short)1,(short)(min_level+(max_level-min_level)*myPreferences.getInt("slider1",0) / 100));
-        eq.setBandLevel((short)2,(short)(min_level+(max_level-min_level)*myPreferences.getInt("slider2",0) / 100));
-        eq.setBandLevel((short)3,(short)(min_level+(max_level-min_level)*myPreferences.getInt("slider3",0) / 100));
-        eq.setBandLevel((short)4,(short)(min_level+(max_level-min_level)*myPreferences.getInt("slider4",0) / 100));
-        bb.setStrength((short)myPreferences.getInt("bbslider",0));
-        virtualizer.setStrength((short)myPreferences.getInt("virslider",0));
-        Log.d("WOW", "bass level *************************** "+(short)myPreferences.getInt("bbslider",0) );
-        Log.d("WOW", "virtualizer level *************************** "+(short)myPreferences.getInt("virslider",0) );
+                = PreferenceManager.getDefaultSharedPreferences(this);
+        spinnerPos = myPreferences.getInt("spinnerpos", 0);
+        if (enabled != null)
+            enabled.setChecked(myPreferences.getBoolean("eqswitch", true));
+        if (enableBass != null)
+            enableBass.setChecked(myPreferences.getBoolean("bbswitch", true));
+        if (enableVirtual != null)
+            enableVirtual.setChecked(myPreferences.getBoolean("virswitch", true));
+        if (enableLoud != null)
+            enableLoud.setChecked(myPreferences.getBoolean("loudswitch", false));
+        if (bb != null)
+            bb.setStrength((short) myPreferences.getInt("bbslider", 0));
+        if (virtualizer != null)
+            virtualizer.setStrength((short) myPreferences.getInt("virslider", 0));
+        if (loudnessEnhancer != null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+            loudnessEnhancer.setTargetGain((int) myPreferences.getFloat("loudslider", 0f));
+    }
+
+    public void disableEvery() {
+        Toast.makeText(this, R.string.disableOther,
+                Toast.LENGTH_LONG).show();
+        if (spinner != null) spinner.setEnabled(false);
+        if (enabled != null) enabled.setChecked(false);
+        if (enableVirtual != null) enableVirtual.setChecked(false);
+        if (enableBass != null) enableBass.setChecked(false);
+        if (enableLoud != null) enableLoud.setChecked(false);
+        canEnable = false;
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && loudnessEnhancer != null)
+            loudnessEnhancer.setEnabled(false);
+        if (loudSlider != null) {
+            loudSlider.setEnabled(false);
+            loudSlider.setProgressColor(ContextCompat.getColor(getBaseContext(), R.color.progress_gray));
+        }
+        if (virtualizer != null) virtualizer.setEnabled(false);
+        if (virtualSlider != null) {
+            virtualSlider.setEnabled(false);
+            virtualSlider.setProgressColor(ContextCompat.getColor(getBaseContext(), R.color.progress_gray));
+        }
+        if (bassSlider != null) {
+            bassSlider.setEnabled(false);
+            bassSlider.setProgressColor(ContextCompat.getColor(getBaseContext(), R.color.progress_gray));
+        }
+        if (bb != null) bb.setEnabled(false);
+        for (int i = 0; i < 5; i++)
+            sliders[i].setEnabled(false);
+        if (eq != null) eq.setEnabled(false);
+    }
+
+    public void disablePreset() {
+        if (presetView != null)
+            presetView.setVisibility(View.GONE);
+        canPreset = false;
+    }
+
+    public void initialize(){
+        SharedPreferences myPreferences
+                = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor myEditor = myPreferences.edit();
+        if (!myPreferences.contains("initial")) {
+            myEditor.putBoolean("initial", true);
+            myEditor.putBoolean("eqswitch", false);
+            myEditor.putBoolean("bbswitch", false);
+            myEditor.putBoolean("virswitch", false);
+            myEditor.putInt("bbslider", (int) bb.getRoundedStrength());
+            myEditor.putBoolean("loudswitch", false);
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && loudnessEnhancer!=null)
+                myEditor.putFloat("loudslider",  loudnessEnhancer.getTargetGain());
+            myEditor.putInt("virslider", (int) virtualizer.getRoundedStrength());
+            myEditor.putInt("slider0", 100 * eq.getBandLevel((short) 0) / (max_level - min_level) + 50);
+            myEditor.putInt("slider1", 100 * eq.getBandLevel((short) 1) / (max_level - min_level) + 50);
+            myEditor.putInt("slider2", 100 * eq.getBandLevel((short) 2) / (max_level - min_level) + 50);
+            myEditor.putInt("slider3", 100 * eq.getBandLevel((short) 3) / (max_level - min_level) + 50);
+            myEditor.putInt("slider4", 100 * eq.getBandLevel((short) 4) / (max_level - min_level) + 50);
+            myEditor.putInt("spinnerpos", 0);
+            myEditor.apply();
+        }
+    }
+
+    public void serviceChecker(){
+        if ((enabled != null && enabled.isChecked()) ||
+            (enableBass != null && enableBass.isChecked()) ||
+            (enableVirtual != null && enableVirtual.isChecked()) ||
+            (enableLoud != null && enableLoud.isChecked())) {
+            Intent startIntent = new Intent(MainActivity.this, ForegroundService.class);
+            startIntent.setAction(Constants.ACTION.STARTFOREGROUND_ACTION);
+            startService(startIntent);
+        } else {
+            Intent stopIntent = new Intent(MainActivity.this, ForegroundService.class);
+            stopIntent.setAction(Constants.ACTION.STOPFOREGROUND_ACTION);
+            startService(stopIntent);
+        }
     }
 
 

@@ -65,13 +65,8 @@ public class AboutActivity extends AppCompatActivity {
         findViewById(R.id.report_bugs).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent email = new Intent(Intent.ACTION_SENDTO);
-                email.setData(Uri.parse("mailto:"));
-                email.putExtra(Intent.EXTRA_EMAIL, new String[]{"jazib27@hotmail.com"});
-                email.putExtra(Intent.EXTRA_SUBJECT, "Bug report: Libre Equalizer");
-                if (email.resolveActivity(getPackageManager()) != null) {
-                    startActivity(email);
-                }
+                // open the new debug/report workflow activity
+                startActivity(new Intent(AboutActivity.this, DebugActivity.class));
             }
         });
         findViewById(R.id.licenses).setOnClickListener(new View.OnClickListener() {
