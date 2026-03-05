@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Equalizer</string>
+    <string name="title_activity_settings">Configurações</string>
+    <string name="warning">Use Loudness Enhancer com cuidado</string>
+    <string name="disableOther">Desativar outros equalizadores antes de ativar este</string>
+    <string name="bass_boost">Bass Boost</string>
+    <string name="enable_equalizer">Ativar o equalizador</string>
+    <string name="presets">Predefinições</string>
+    <string name="virtualizer">Virtualizador</string>
+    <string name="loudness">Loudness</string>
+    <string name="about">Sobre</string>
+    <string name="settings">Definições</string>
+    <string name="support_summary">Obrigado por instalar este aplicativo. Se você gostou do meu aplicativo e acha que eu mereço ser pago pelo meu trabalho, você pode deixar algum dinheiro aqui. Qualquer compra removerá anúncios.</string>
+    <string name="purchase_thanks">Obrigado por adquirir. Todos os anúncios são removidos.</string>
+    <string name="privacy_policy">Política de Privacidade</string>
+    <string name="licenses">Licenças</string>
+    <string name="report_bugs">Reportar erros</string>
+    <string name="fork_on_github">Garfo no GitHub</string>
+    <string name="any_donation_will_remove_the_ads">Qualquer doação removerá os anúncios.</string>
+    <string name="donate">Doar</string>
+    <string name="leave_a_positive_rating_on_google_play">Deixe uma classificação positiva no Google Play.</string>
+    <string name="rate">Taxa</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">Um equalizador de fonte aberta e peso leve para todos os dispositivos.</string>
+    <string name="preset_name">Nome Predefinido</string>
+    <string name="purchased_successfully">Comprado com sucesso</string>
+    <string name="eq_is_enabled">O equalizador está ativado</string>
+    <string name="load_preset">Carregar Predefinição</string>
+    <string name="preset_deleted_successfully">Predefinição excluída com sucesso</string>
+    <string name="delete_preset">Excluir predefinição</string>
+    <string name="please_save_preset">Por favor, salve um Preset primeiro</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save_as_preset">Salvar como predefinição</string>
+    <string name="save">SALVE </string>
+    <string name="please_enter_preset">Por favor, digite o nome da predefinição</string>
+    <string name="preset_saved_successfully">Preset salvo com sucesso</string>
+
+</resources>

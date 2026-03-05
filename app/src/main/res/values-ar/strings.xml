@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Equalizer</string>
+    <string name="title_activity_settings">إعدادات</string>
+    <string name="warning">استخدام محسن الصوت مع الحذر</string>
+    <string name="disableOther">تعطيل معادلات أخرى قبل تمكين هذا</string>
+    <string name="bass_boost">دفعة باس</string>
+    <string name="enable_equalizer"> تمكين المعادل</string>
+    <string name="presets">المسبقة</string>
+    <string name="virtualizer">Virtualizer</string>
+    <string name="loudness">بريق</string>
+    <string name="about">حول</string>
+    <string name="settings">الإعدادات</string>
+    <string name="support_summary">شكرًا لك على تثبيت هذا التطبيق. إذا كنت قد أحببت تطبيقي وكنت تعتقد أنني أستحق أن أتقاضى أجورًا مقابل عملي ، فيمكنك ترك بعض المال هنا. أي عملية شراء ستزيل الإعلانات.</string>
+    <string name="purchase_thanks">شكرا لك على عملية الشراء. تتم إزالة جميع الإعلانات.</string>
+    <string name="privacy_policy">سياسة خاصة</string>
+    <string name="licenses">تراخيص</string>
+    <string name="report_bugs">تقرير البق</string>
+    <string name="fork_on_github">شوكة على جيثب</string>
+    <string name="any_donation_will_remove_the_ads">أي تبرع سيزيل الإعلانات.</string>
+    <string name="donate">تبرع</string>
+    <string name="leave_a_positive_rating_on_google_play">اترك تقييمًا إيجابيًا على Google Play.</string>
+    <string name="rate">معدل</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">المصدر المفتوح ، المعادل الخفيف لجميع الأجهزة.</string>
+    <string name="preset_name">اسم مسبقا</string>
+    <string name="purchased_successfully">تم شراؤها بنجاح</string>
+    <string name="eq_is_enabled">تم تمكين المعادل</string>
+    <string name="load_preset">تحميل مسبقا</string>
+    <string name="preset_deleted_successfully">تم حذف الإعداد المسبق بنجاح</string>
+    <string name="delete_preset">حذف الإعداد المسبق</string>
+    <string name="please_save_preset">الرجاء حفظ الإعداد المسبق أولاً</string>
+    <string name="cancel">إلغاء</string>
+    <string name="save_as_preset">حفظ كإعداد مسبق</string>
+    <string name="save">حفظ</string>
+    <string name="please_enter_preset">الرجاء إدخال اسم الإعداد المسبق</string>
+    <string name="preset_saved_successfully">تم حفظه مسبقا بنجاح</string>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Equalizer</string>
+    <string name="title_activity_settings">die Einstellungen</string>
+    <string name="warning">Verwenden Sie Loudness Enhancer mit Vorsicht</string>
+    <string name="disableOther">Deaktivieren Sie andere Equalizer, bevor Sie dies aktivieren</string>
+    <string name="bass_boost">Bassverstärkung</string>
+    <string name="enable_equalizer">Aktivieren Sie den Equalizer</string>
+    <string name="presets">Voreinstellungen</string>
+    <string name="virtualizer">Virtualisierung</string>
+    <string name="loudness">Lautstärke</string>
+    <string name="about">Über</string>
+    <string name="settings">die Einstellungen</string>
+    <string name="support_summary">Vielen Dank, dass Sie diese App installiert haben. Wenn Ihnen meine App gefallen hat und Sie meiner Meinung nach verdient haben, für meine Arbeit bezahlt zu werden, können Sie hier etwas Geld hinterlassen. Bei jedem Kauf werden Anzeigen entfernt.</string>
+    <string name="purchase_thanks">Danke für Ihren Einkauf. Alle Anzeigen werden entfernt.</string>
+    <string name="privacy_policy">Datenschutz-Bestimmungen</string>
+    <string name="licenses">Lizenzen</string>
+    <string name="report_bugs">Fehler melden</string>
+    <string name="fork_on_github">Gabel auf GitHub</string>
+    <string name="any_donation_will_remove_the_ads">Bei jeder Spende werden die Anzeigen entfernt.</string>
+    <string name="donate">Spenden</string>
+    <string name="leave_a_positive_rating_on_google_play">Hinterlassen Sie eine positive Bewertung bei Google Play.</string>
+    <string name="rate">Bewertung</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">Leichter Equalizer für alle Geräte.</string>
+    <string name="preset_name">Name der Voreinstellung</string>
+    <string name="purchased_successfully">Erfolgreich gekauft</string>
+    <string name="eq_is_enabled">Equalizer ist aktiviert</string>
+    <string name="load_preset">Preset laden</string>
+    <string name="preset_deleted_successfully">Preset erfolgreich gelöscht</string>
+    <string name="delete_preset">Preset löschen</string>
+    <string name="please_save_preset">Bitte speichern Sie zuerst ein Preset</string>
+    <string name="cancel">Stornieren</string>
+    <string name="save_as_preset">Als Voreinstellung speichern</string>
+    <string name="save">SPAREN</string>
+    <string name="please_enter_preset">Bitte geben Sie den Namen des Presets ein</string>
+    <string name="preset_saved_successfully">Preset erfolgreich gespeichert</string>
+
+</resources>

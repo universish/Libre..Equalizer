@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Equalizer</string>
+    <string name="title_activity_settings">सेटिंग्स</string>
+    <string name="warning">सावधानी के साथ लाउडनेस एन्हांसर का प्रयोग करें</string>
+    <string name="disableOther">इसे सक्षम करने से पहले अन्य तुल्यकारक अक्षम करें</string>
+    <string name="bass_boost">मंद्र को बढ़ाना</string>
+    <string name="enable_equalizer">तुल्यकारक सक्षम करें</string>
+    <string name="presets">प्रीसेट</string>
+    <string name="virtualizer">वर्चुअलाइज़र</string>
+    <string name="loudness">प्रबलता</string>
+    <string name="about">के बारे में</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="support_summary">इस एप्लिकेशन को स्थापित करने के लिए धन्यवाद। यदि आपको मेरा ऐप पसंद आया है और आपको लगता है कि मैं अपने काम के लिए भुगतान करने के लायक हूं, तो आप यहां कुछ पैसे छोड़ सकते हैं। कोई भी खरीदारी विज्ञापन निकाल देगी।</string>
+    <string name="purchase_thanks">ख़रीदने के लिए धन्यवाद। सभी विज्ञापन हटा दिए जाते हैं।</string>
+    <string name="privacy_policy">गोपनीयता नीति</string>
+    <string name="licenses">लाइसेंस</string>
+    <string name="report_bugs">रिपोर्ट्स कीड़े</string>
+    <string name="fork_on_github">गिटहब पर कांटा</string>
+    <string name="any_donation_will_remove_the_ads">कोई भी दान विज्ञापन निकाल देगा।</string>
+    <string name="donate">दान करना</string>
+    <string name="leave_a_positive_rating_on_google_play">Google Play पर सकारात्मक रेटिंग छोड़े।</string>
+    <string name="rate">मूल्यांकन करें</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">सभी उपकरणों के लिए एक ओपन सोर्स, लाइट वेट इक्वालाइज़र।</string>
+    <string name="preset_name">पूर्व निर्धारित नाम</string>
+    <string name="purchased_successfully">सफलतापूर्वक खरीदे गए</string>
+    <string name="eq_is_enabled">तुल्यकारक सक्षम है</string>
+    <string name="load_preset">लोड पूर्व निर्धारित</string>
+    <string name="preset_deleted_successfully">पूर्व निर्धारित सफलतापूर्वक हटा दिया गया</string>
+    <string name="delete_preset">प्रीसेट डिलीट करें</string>
+    <string name="please_save_preset">कृपया पहले एक प्रीसेट सहेजें</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="save_as_preset">प्रीसेट के रूप में सहेजें</string>
+    <string name="save">बचाना</string>
+    <string name="please_enter_preset">कृपया प्रीसेट का नाम दर्ज करें</string>
+    <string name="preset_saved_successfully">पूर्व निर्धारित सहेजे गए</string>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Equalizer</string>
+    <string name="title_activity_settings">"настройки "</string>
+    <string name="disableOther">Отключите другие эквалайзеры, прежде чем включить это</string>
+    <string name="enable_equalizer">Включить эквалайзер</string>
+    <string name="bass_boost">Усиление басов</string>
+    <string name="presets">пресеты</string>
+    <string name="virtualizer">Virtualizer</string>
+    <string name="loudness">громкость</string>
+    <string name="about">около</string>
+    <string name="warning">Используйте усилитель громкости с осторожностью</string>
+    <string name="settings">настройки</string>
+    <string name="support_summary">Спасибо за установку этого приложения. Если вам понравилось мое приложение и вы считаете, что я заслуживаю оплаты за свою работу, вы можете оставить здесь немного денег. Любая покупка удалит рекламу.</string>
+    <string name="purchase_thanks">Благодарим за покупку. Все объявления удалены.</string>
+    <string name="privacy_policy">политика конфиденциальности</string>
+    <string name="licenses">Лицензии</string>
+    <string name="report_bugs">Сообщить об ошибках</string>
+    <string name="fork_on_github">Вилка на GitHub</string>
+    <string name="any_donation_will_remove_the_ads">Любое пожертвование удалит рекламу.</string>
+    <string name="donate">жертвовать</string>
+    <string name="leave_a_positive_rating_on_google_play">Оставьте положительный рейтинг в Google Play.</string>
+    <string name="rate">Темп</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">Легкий эквалайзер с открытым исходным кодом для всех устройств.</string>
+    <string name="preset_name">Название пресета</string>
+    <string name="purchased_successfully">Куплено успешно</string>
+    <string name="eq_is_enabled">Эквалайзер включен</string>
+    <string name="load_preset">Загрузить пресет</string>
+    <string name="preset_deleted_successfully">Пресет успешно удален</string>
+    <string name="delete_preset">Удалить пресет</string>
+    <string name="please_save_preset">Пожалуйста, сначала сохраните пресет</string>
+    <string name="cancel">отменить</string>
+    <string name="save_as_preset">Сохранить как пресет</string>
+    <string name="save">СПАСТИ</string>
+    <string name="please_enter_preset">Пожалуйста, введите название пресета</string>
+    <string name="preset_saved_successfully">Предустановка успешно сохранена</string>
+
+</resources>

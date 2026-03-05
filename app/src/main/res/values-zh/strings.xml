@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Equalizer</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="warning">小心使用响度增强器</string>
+    <string name="disableOther">在启用此功能之前禁用其他均衡器</string>
+    <string name="bass_boost">低音增强</string>
+    <string name="enable_equalizer">启用均衡器</string>
+    <string name="presets">预置</string>
+    <string name="virtualizer">虚拟器</string>
+    <string name="loudness">响度</string>
+    <string name="about">关于</string>
+    <string name="settings">设置</string>
+    <string name="support_summary">感谢您安装此应用。如果您喜欢我的应用程序，并且您认为我应该为我的工作获得报酬，那么您可以在这里留下一些钱。任何购买都会删除广告。</string>
+    <string name="purchase_thanks">谢谢你的采购。所有广告都已删除。</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="licenses">许可证</string>
+    <string name="report_bugs">报告错误</string>
+    <string name="fork_on_github">在GitHub上分叉</string>
+    <string name="any_donation_will_remove_the_ads">任何捐赠都将删除广告。</string>
+    <string name="donate">捐</string>
+    <string name="leave_a_positive_rating_on_google_play">在Google Play上留下正面评价。</string>
+    <string name="rate">率</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">适用于所有设备的开源，轻量均衡器。</string>
+    <string name="preset_name">预设名称</string>
+    <string name="purchased_successfully">购买成功</string>
+    <string name="eq_is_enabled">均衡器已启用</string>
+    <string name="load_preset">加载预设</string>
+    <string name="preset_deleted_successfully">预设已成功删除</string>
+    <string name="delete_preset">删除预设</string>
+    <string name="please_save_preset">请先保存预设</string>
+    <string name="cancel">取消</string>
+    <string name="save_as_preset">另存为预设</string>
+    <string name="save">保存</string>
+    <string name="please_enter_preset">请输入预设的名称</string>
+    <string name="preset_saved_successfully">预设已成功保存</string>
+
+</resources>

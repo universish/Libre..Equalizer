@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Equalizer</string>
+    <string name="title_activity_settings">Configuraciones</string>
+    <string name="warning">Use Loudness Enhancer con precaución</string>
+    <string name="disableOther">Inhabilitar otros ecualizadores antes de habilitar esto</string>
+    <string name="bass_boost">Refuerzo de graves</string>
+    <string name="enable_equalizer">Habilitar ecualizador</string>
+    <string name="presets">Presets</string>
+    <string name="virtualizer">Virtualizador</string>
+    <string name="loudness">Volumen</string>
+    <string name="about">Acerca de</string>
+    <string name="settings">Ajustes</string>
+    <string name="support_summary">Gracias por instalar esta aplicación. Si te gustó mi aplicación y crees que merezco que me paguen por mi trabajo, puedes dejar algo de dinero aquí. Cualquier compra eliminará los anuncios.</string>
+    <string name="purchase_thanks">Gracias por comprar. Todos los anuncios son eliminados.</string>
+    <string name="privacy_policy">Política de privacidad</string>
+    <string name="licenses">Licencias</string>
+    <string name="report_bugs">Informar de errores</string>
+    <string name="fork_on_github">Tenedor en GitHub</string>
+    <string name="any_donation_will_remove_the_ads">Cualquier donación eliminará los anuncios.</string>
+    <string name="donate">Donar</string>
+    <string name="leave_a_positive_rating_on_google_play">Deja una calificación positiva en Google Play.</string>
+    <string name="rate">Tarifa</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">Un código abierto, ecualizador de peso ligero para todos los dispositivos.</string>
+    <string name="preset_name">Nombre preestablecido</string>
+    <string name="purchased_successfully">Comprado con éxito</string>
+    <string name="eq_is_enabled">Ecualizador está habilitado</string>
+    <string name="load_preset">Preset de carga</string>
+    <string name="preset_deleted_successfully">Preset borrado con éxito</string>
+    <string name="delete_preset">Eliminar preajuste</string>
+    <string name="please_save_preset">Por favor, guarde primero un preset</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save_as_preset">Guardar como predefinido</string>
+    <string name="save">SALVAR</string>
+    <string name="please_enter_preset">Por favor ingrese el nombre del preset</string>
+    <string name="preset_saved_successfully">Preset guardado con éxito</string>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Equalizer</string>
+    <string name="title_activity_settings">Paramètres</string>
+    <string name="warning">Utilisez le renforçateur de volume avec précaution</string>
+    <string name="disableOther">Désactiver les autres égaliseurs avant d\'activer cette option</string>
+    <string name="bass_boost">Bass renforcer</string>
+    <string name="enable_equalizer">Activer l\'égaliseur</string>
+    <string name="presets">Presets</string>
+    <string name="virtualizer">Virtualizer</string>
+    <string name="loudness">Intensité</string>
+    <string name="about">Sur</string>
+    <string name="settings">Réglages</string>
+    <string name="support_summary">Merci d\'avoir installé cette application. Si vous avez aimé mon application et que vous pensez que je mérite d\'être payé pour mon travail, vous pouvez laisser de l\'argent ici. Tout achat supprimera les annonces.</string>
+    <string name="purchase_thanks">Merci d\'avoir effectué un achat. Toutes les annonces sont supprimées.</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="licenses">Les licences</string>
+    <string name="report_bugs">Signaler des bugs</string>
+    <string name="fork_on_github">Fork sur GitHub</string>
+    <string name="any_donation_will_remove_the_ads">Tout don supprimera les publicités.</string>
+    <string name="donate">Faire un don</string>
+    <string name="leave_a_positive_rating_on_google_play">Laissez une note positive sur Google Play.</string>
+    <string name="rate">Taux</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">Un égaliseur Open Source et léger pour tous les appareils.</string>
+    <string name="preset_name">Nom du préréglage</string>
+    <string name="purchased_successfully">Acheté avec succès</string>
+    <string name="eq_is_enabled">L\'égaliseur est activé</string>
+    <string name="load_preset">Charger le préréglage</string>
+    <string name="preset_deleted_successfully">Le préréglage a été supprimé avec succès</string>
+    <string name="delete_preset">Supprimer le préréglage</string>
+    <string name="please_save_preset">Sauvegardez d\'abord un préréglage</string>
+    <string name="cancel">Annuler</string>
+    <string name="save_as_preset">Enregistrer sous prédéfini</string>
+    <string name="save">ENREGISTRER</string>
+    <string name="please_enter_preset">Veuillez entrer le nom du préréglage</string>
+    <string name="preset_saved_successfully">Le préréglage a été sauvegardé avec succès</string>
+
+</resources>
