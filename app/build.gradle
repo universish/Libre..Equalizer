@@ -14,7 +14,7 @@ android {
         vectorDrawables.useSupportLibrary = true
     }
 
-// debug signing configuration
+    // debug signing configuration
 
     def debugProps = new Properties()
     def debugFile = rootProject.file("debugkey.properties")
