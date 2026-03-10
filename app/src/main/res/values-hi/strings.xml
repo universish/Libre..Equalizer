@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Equalizer</string>
+    <string name="title_activity_settings">सेटिंग्स</string>
+    <string name="warning">सावधानी के साथ लाउडनेस एन्हांसर का प्रयोग करें</string>
+    <string name="disableOther">इसे सक्षम करने से पहले अन्य तुल्यकारक अक्षम करें</string>
+    <string name="bass_boost">मंद्र को बढ़ाना</string>
+    <string name="enable_equalizer">तुल्यकारक सक्षम करें</string>
+    <string name="presets">प्रीसेट</string>
+    <string name="virtualizer">वर्चुअलाइज़र</string>
+    <string name="loudness">प्रबलता</string>
+    <string name="system_volume">सिस्टम वॉल्यूम</string>
+    <string name="about">के बारे में</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="support_summary">इस एप्लिकेशन को स्थापित करने के लिए धन्यवाद। यदि आपको मेरा ऐप पसंद आया है और आपको लगता है कि मैं अपने काम के लिए भुगतान करने के लायक हूं, तो आप यहां कुछ पैसे छोड़ सकते हैं। कोई भी खरीदारी विज्ञापन निकाल देगी।</string>
+    <string name="purchase_thanks">ख़रीदने के लिए धन्यवाद। सभी विज्ञापन हटा दिए जाते हैं।</string>
+    <string name="privacy_policy">गोपनीयता नीति</string>
+    <string name="menu_diagnostics">निदान</string>
+    <string name="licenses">लाइसेंस</string>
+    <string name="report_bugs">रिपोर्ट्स कीड़े</string>
+    <string name="fork_on_github">गिटहब पर कांटा</string>
+    <string name="any_donation_will_remove_the_ads">कोई भी दान विज्ञापन निकाल देगा।</string>
+    <string name="donate">दान करना</string>
+    <string name="rate">मूल्यांकन करें</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">सभी उपकरणों के लिए एक ओपन सोर्स, लाइट वेट इक्वालाइज़र।</string>
+    <string name="preset_name">पूर्व निर्धारित नाम</string>
+    <string name="purchased_successfully">सफलतापूर्वक खरीदे गए</string>
+    <string name="eq_is_enabled">तुल्यकारक सक्षम है</string>
+    <string name="load_preset">लोड पूर्व निर्धारित</string>
+    <string name="preset_deleted_successfully">पूर्व निर्धारित सफलतापूर्वक हटा दिया गया</string>
+    <string name="delete_preset">प्रीसेट डिलीट करें</string>
+    <string name="please_save_preset">कृपया पहले एक प्रीसेट सहेजें</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="save_as_preset">प्रीसेट के रूप में सहेजें</string>
+    <string name="save">बचाना</string>
+    <string name="please_enter_preset">कृपया प्रीसेट का नाम दर्ज करें</string>
+    <string name="preset_saved_successfully">पूर्व निर्धारित सहेजे गए</string>
+
+    
+    <string name="pref_title_language">Language</string>
+    <string name="pref_title_dark_theme">Dark Theme</string>
+    <string name="lang_english">English</string>
+    <string name="lang_finnish">Suomi</string>
+    <string name="lang_turkish">Türkçe</string>
+    <string name="lang_dutch">Nederlands</string>
+    <string name="lang_german">Deutsch</string>
+    <string name="lang_spanish">Español</string>
+    <string name="lang_swedish">Svenska</string>
+    <string name="lang_french">Français</string>
+    <string name="lang_hindi">हिंदी</string>
+    <string name="lang_italian">Italiano</string>
+    <string name="lang_portuguese">Português</string>
+    <string name="lang_norwegian">Norsk</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_polish">Polski</string>
+    <string name="lang_chinese">中文</string>
+    <string name="lang_danish">Dansk</string>
+    <string name="lang_greek">Ελληνικά</string>
+    <string name="lang_albanian">Shqip</string>
+    <string name="lang_armenian">Հայերեն</string>
+    <string name="lang_kurdish">Kurdî</string>
+    <string name="lang_kazakh">Қазақша</string>
+    <string name="lang_kyrgyz">Кыргызча</string>
+    <string name="lang_luxembourgish">Lëtzebuergesch</string>
+    <string name="lang_korean">한국어</string>
+    <string name="lang_japanese">日本語</string>
+    <string name="pref_title_check_updates">Check for updates</string>
+    <string name="pref_summary_check_updates">Open release tags page</string>
+    <string name="rate_app">Rate this app via email</string>
+    <string name="pref_header_general" translatable="false">General</string>
+    <string name="pref_title_social_recommendations" translatable="false">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations" translatable="false">Recommendations for people to contact
+        based on your message history
+    </string>
+    <string name="pref_title_display_name" translatable="false">Display name</string>
+    <string name="pref_default_display_name" translatable="false">Maria Papadopoulou</string>
+    <string name="pref_title_add_friends_to_messages" translatable="false">Add friends to messages</string>
+    <string-array name="pref_example_list_titles" translatable="false">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values" translatable="false">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string name="pref_header_data_sync" translatable="false">Data &amp; sync</string>
+    <string name="pref_title_sync_frequency" translatable="false">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles" translatable="false">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values" translatable="false">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="list_preference_entries" translatable="false">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+    <string-array name="list_preference_entry_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="multi_select_list_preference_default_value" translatable="false" />
+    <string name="pref_title_system_title" translatable="false">System Title</string>
+    <string name="pref_header_notifications" translatable="false">Notifications</string>
+    <string name="pref_title_new_message_notifications" translatable="false">New message notifications</string>
+    <string name="pref_title_ringtone" translatable="false">Ringtone</string>
+    <string name="pref_ringtone_silent" translatable="false">Silent</string>
+    <string name="pref_title_vibrate" translatable="false">Vibrate</string>
+    <string name="pref_title_system_sync_settings" translatable="false">System sync settings</string>
+    </resources>

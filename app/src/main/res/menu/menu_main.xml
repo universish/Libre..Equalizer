@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_donate"
+        android:orderInCategory="90"
+        android:title="@string/donate"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_load_preset"
+        android:orderInCategory="100"
+        android:title="Load Preset"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_save_preset"
+        android:orderInCategory="100"
+        android:title="Save As Preset"
+        app:showAsAction="never" />
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="@string/menu_settings"
+        android:title="@string/settings"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_about"
-        android:orderInCategory="101"
-        android:title="@string/menu_about"
+        android:orderInCategory="100"
+        android:title="@string/about"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_support"
-        android:orderInCategory="102"
-        android:title="@string/menu_support"
+        android:id="@+id/action_audio_effect"
+        android:orderInCategory="100"
+        android:title="Audio Effects"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_diagnostics"
+        android:orderInCategory="100"
+        android:title="Diagnostics"
         app:showAsAction="never" />
 </menu>

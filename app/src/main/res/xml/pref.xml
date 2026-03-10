@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- simple preference structure with dark theme option -->
-    <PreferenceCategory android:title="Display">
-        <androidx.preference.SwitchPreferenceCompat
-            android:key="dark_theme"
-            android:title="Dark theme"
-            android:defaultValue="true" />
-    </PreferenceCategory>
+    <ListPreference
+        android:key="app_lang"
+        android:title="@string/pref_title_language"
+        android:entries="@array/lang_names"
+        android:entryValues="@array/lang_values"
+        android:defaultValue="en" />
+
+    <Preference
+        android:key="check_updates"
+        android:title="@string/pref_title_check_updates"
+        android:summary="@string/pref_summary_check_updates" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="dark_theme"
+        android:summaryOff="Light Theme Enabled"
+        android:summaryOn="Dark Theme Enabled"
+        android:title="@string/pref_title_dark_theme"
+        android:id="@+id/darkPref" />
+
 </PreferenceScreen>

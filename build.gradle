@@ -1,12 +1,18 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+
 buildscript {
-    ext.kotlin_version = '1.9.10'
+    // modern configuration: AndroidX project, no Kotlin support plugin
     repositories {
-        mavenCentral()
         google()
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.4.2'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // updated to latest stable Android Gradle Plugin (>=9.0.0 as of 2026)
+        classpath 'com.android.tools.build:gradle:9.0.0'
+        // include Kotlin gradle plugin latest stable so we can set JVM target 25
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.10.0'
+        // other classpaths (lint, crashlytics etc.) can be added here if needed
     }
 }
 
@@ -14,26 +20,13 @@ allprojects {
     repositories {
         mavenCentral()
         maven {
-            url 'https://jitpack.io'
+            url = uri("https://maven.google.com")
         }
         google()
+
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
-}
-
-def keystoreProps = new Properties()
-def keystoreFile = rootProject.file("releasekey.properties")
-if (keystoreFile.exists()) {
-    keystoreProps.load(new FileInputStream(keystoreFile))
-}
-
-// debug signing configuration
-
-def debugProps = new Properties()
-def debugFile = rootProject.file("debugkey.properties")
-if (debugFile.exists()) {
-    debugProps.load(new FileInputStream(debugFile))
 }

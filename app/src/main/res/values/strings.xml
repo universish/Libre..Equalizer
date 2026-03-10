@@ -1,29 +1,153 @@
 <resources>
     <string name="app_name">Libre Equalizer</string>
-    <string name="enable_equalizer">Enable equalizer</string>
-    <string name="presets">Presets</string>
     <string name="title_activity_settings">Settings</string>
-
-
-    <!-- About/Support strings -->
+    <string name="warning">Use Loudness Enhancer with Caution</string>
+    <string name="disableOther">Disable other Equalizers before enabling this</string>
+    <string name="bass_boost">Bass Boost</string>
+    <string name="enable_equalizer">Enable Equalizer</string>
+    <string name="presets">Presets</string>
+    <string name="virtualizer">Virtualizer</string>
+    <string name="loudness">Loudness</string>
+    <string name="system_volume">System Volume</string>
     <string name="about">About</string>
-    <string name="support_summary">Thank you for installing this app. If you liked my work you can donate. Any contribution removes ads.</string>
-    <string name="purchase_thanks">Thank you for purchasing. All ads are removed.</string>
-    <string name="privacy_policy">Privacy Policy</string>
-    <string name="privacy_text">This project is free, libre, privacy-focused and open-source.\n\n- No trackers, analytics, or advertising libraries are included.\n- No internet permission is requested by the app.\n- Local data: logs and debug reports are stored locally; debug reports are sanitized (emails, phone numbers, tokens masked) before user shares them manually.\n- When the built‑in diagnostics tool runs it creates two files: one with raw log data and one with personal information removed. You are asked to compare them before sending; only the sanitized file is attached to the email.\n\nIf you have concerns, open an issue at the repository and we\'ll address them.</string>
-    <string name="licenses">Licenses</string>
-    <string name="report_bugs">Report Bug / Diagnostics</string>
-    <string name="fork_on_github">Fork on GitHub</string>
-    <string name="any_donation_will_remove_the_ads">Any donation will remove the ads.</string>
+
+
+
+    <string name="settings">Settings</string>
+    <string name="support_summary">Thank you for Installing this app. If you liked my app and you think I deserve to get paid for my work, you can leave some money here.</string>
     <string name="donate">Donate</string>
-    <string name="leave_a_positive_rating_on_google_play">Leave a positive rating on Google Play.</string>
+    <string name="purchase_thanks">Thank you for your support.</string>
+    <string name="menu_diagnostics">Diagnostics</string>
+    <string name="pref_title_language">Language</string>
+    <string name="pref_title_dark_theme">Dark Theme</string>
+    <string name="lang_english">English</string>
+    <string name="lang_finnish">Suomi</string>
+    <string name="lang_turkish">Türkçe</string>
+    <string name="lang_dutch">Nederlands</string>
+    <string name="lang_german">Deutsch</string>
+    <string name="lang_spanish">Español</string>
+    <string name="lang_swedish">Svenska</string>
+    <string name="lang_french">Français</string>
+    <string name="lang_hindi">हिंदी</string>
+    <string name="lang_italian">Italiano</string>
+    <string name="lang_portuguese">Português</string>
+    <string name="lang_norwegian">Norsk</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_polish">Polski</string>
+    <string name="lang_chinese">中文</string>
+    <string name="lang_danish">Dansk</string>
+    <string name="lang_greek">Ελληνικά</string>
+    <string name="lang_albanian">Shqip</string>
+    <string name="lang_armenian">Հայերեն</string>
+    <string name="lang_kurdish">Kurdî</string>
+    <string name="lang_kazakh">Қазақша</string>
+    <string name="lang_kyrgyz">Кыргызча</string>
+    <string name="lang_luxembourgish">Lëtzebuergesch</string>
+    <string name="lang_korean">한국어</string>
+    <string name="lang_japanese">日本語</string>
+    <string name="pref_title_check_updates">Check for updates</string>
+    <string name="pref_summary_check_updates">Open release tags page</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="licenses">Licenses</string>
+    <string name="report_bugs">Report Bugs</string>
+    <string name="fork_on_github">Fork on Codeberg</string>
     <string name="rate">Rate</string>
-    <string name="an_open_source_light_weight_equalizer_for_all_devices">An Open Source, Light Weight equalization tool for all devices.</string>
-    <string name="disableOther">Disabling all effects...</string>
+    <string name="rate_app">Rate this app via email</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">An Open Source, Light Weight Equalizer for all devices.</string>
+    <string name="preset_name">Preset Name</string>
+    <string name="purchased_successfully">Purchased Successfully</string>
+    <string name="eq_is_enabled">Equalizer is enabled</string>
+    <string name="load_preset">Load Preset</string>
+    <string name="preset_deleted_successfully">Preset deleted Successfully</string>
+    <string name="delete_preset">Delete Preset</string>
+    <string name="please_save_preset">Please save a Preset first</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_as_preset">Save As Preset</string>
+    <string name="save">SAVE</string>
+    <string name="please_enter_preset">Please Enter the Name of the Preset</string>
+    <string name="preset_saved_successfully">Preset Saved Successfully</string>
 
-    <!-- Menu labels -->
-    <string name="menu_settings">Settings</string>
-    <string name="menu_about">About</string>
-    <string name="menu_support">Support</string>
 
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general" translatable="false">General</string>
+
+    <string name="pref_title_social_recommendations" translatable="false">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations" translatable="false">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name" translatable="false">Display name</string>
+    <string name="pref_default_display_name" translatable="false">Maria Papadopoulou</string>
+
+    <string name="pref_title_add_friends_to_messages" translatable="false">Add friends to messages</string>
+    <string-array name="pref_example_list_titles" translatable="false">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values" translatable="false">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync" translatable="false">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency" translatable="false">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles" translatable="false">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values" translatable="false">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries" translatable="false">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" translatable="false" />
+
+    <string name="pref_title_system_sync_settings" translatable="false">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications" translatable="false">Notifications</string>
+
+    <string name="pref_title_new_message_notifications" translatable="false">New message notifications</string>
+
+    <string name="pref_title_ringtone" translatable="false">Ringtone</string>
+    <string name="pref_ringtone_silent" translatable="false">Silent</string>
+
+    <string name="pref_title_vibrate" translatable="false">Vibrate</string>
+
+
+
+    <!-- Preset names array -->
+
+    <!-- Eksik yapılar values-tr dizininden eklendi -->
+    <string name="pref_title_system_title" translatable="false">System Title</string>
+
+    <!-- Diger dosyalardan tamamlanan eksik satirlar -->
+    <string name="any_donation_will_remove_the_ads">Any donation will remove the ads.</string>
 </resources>

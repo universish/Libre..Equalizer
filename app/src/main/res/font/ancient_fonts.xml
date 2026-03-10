@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Font family used as a fallback for scripts that are not normally
+    available on Android devices (Old Turkic, Hittite cuneiform, Luwian,
+    Urartian, etc.).  Replace the <font> entries with real TTF files
+    containing the desired glyph ranges.  For now the system "sans-serif"
+    font is used so the resource compiles and the app can be tested.
+-->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- use packaged typefaces for ancient scripts; order gives fallback
+         priority if the first font lacks a glyph -->
+
+</font-family>

@@ -64,51 +64,6 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/rate_on_google_play"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:minHeight="48dp"
-                    >
-
-                    <ImageView
-                        android:id="@+id/icon_rate"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        app:srcCompat="@drawable/ic_star_white_24dp"
-                        tools:ignore="ContentDescription,UnusedAttribute"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginLeft="32dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/rate"
-                            android:paddingTop="8dp"
-
-                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:paddingBottom="8dp"
-                            android:text="@string/leave_a_positive_rating_on_google_play"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/donate"
@@ -143,14 +98,39 @@
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/any_donation_will_remove_the_ads"
-                            android:paddingBottom="8dp"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
 
                     </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- rate via email button -->
+                <LinearLayout
+                    android:id="@+id/rate_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:minHeight="48dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:srcCompat="@drawable/ic_email_white_24dp"
+                        tools:ignore="ContentDescription,UnusedAttribute" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:text="@string/rate_app"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
                 </LinearLayout>
 
@@ -280,7 +260,7 @@
 
             </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
     </ScrollView>
 

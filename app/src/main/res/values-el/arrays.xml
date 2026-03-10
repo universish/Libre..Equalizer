@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="custom_preset_names">
+        <item>Ροκ</item>
+        <item>Ποπ</item>
+        <item>Τζαζ</item>
+        <item>Κλασικό</item>
+        <item>Χιπ Χοπ</item>
+        <item>Ενίσχυση Μπάσων</item>
+        <item>Ενίσχυση Πρίμων</item>
+        <item>Ακουστικό</item>
+        <item>Ηλεκτρονικό</item>
+        <item>Επίπεδο</item>
+        <item>Normal</item>
+        <item>Φωνητικό</item>
+        <item>Μέταλ</item>
+        <item>Χορευτικό</item>
+        <item>Ρέγκε</item>
+        <item>Κάντρυ</item>
+        <item>Μπλουζ</item>
+        <item>Φολκ</item>
+        <item>Λάτιν</item>
+        <item>Ρ&amp;Μπί</item>
+        <item>Άμπιεντ</item>
+        <item>Φανκ</item>
+        <item>Πάρτι</item>
+        <item>Μαλακό</item>
+        <item>Χαρντ Ροκ</item>
+        <item>Πανκ</item>
+        <item>Νταπστεπ</item>
+        <item>EDM</item>
+        <item>Ίντι</item>
+        <item>Ενίσχυση Φωνής</item>
+        <item>Βαθύ</item>
+        <item>Ζωντανό</item>
+        <item>Στούντιο</item>
+        <item>Χιλ</item>
+        <item>Τέκνο</item>
+        <item>Χάουζ</item>
+        <item>Συνθ</item>
+        <item>Ρεγκαέτον</item>
+        <item>K-Pop</item>
+        <item>Βέιπορβέιβ</item>
+        <item>Ντραμ &amp; Μπάς</item>
+        <item>Σκά</item>
+        <item>Γκόσπελ</item>
+        <item>Τουρκού</item>
+        <item>Τουρκικό Ροκ</item>
+        <item>Ανατολικό Ροκ</item>
+        <item>Τουρκική Ποπ</item>
+        <item>Τουρκική Αργή Ποπ</item>
+        <item>Τουρκική Αργή Ροκ</item>
+        <item>Τουρκικό Μέταλ</item>
+        <item>Τουρκική Συναισθηματική Μουσική</item>
+        <item>Τουρκική Παράδοση</item>
+        <item>Αραμπέσκ</item>
+        <item>Τουρκικό Ραπ</item>
+        <item>Αδελφοί Γκρεκ Τάβερνα</item>
+        <item>Ρεμπέτικο</item>
+        <item>Ελληνική Ποπ</item>
+        <item>Ελληνικό Ροκ</item>
+        <item>Ελληνικό Φολκ</item>
+        <item>Λαϊκό</item>
+        <item>Μπουζούκι</item>
+        <item>Ελληνική Αργή Ποπ</item>
+        <item>Ελληνικό Μέταλ</item>
+    </string-array>
+</resources>

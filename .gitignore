@@ -78,6 +78,7 @@ release-keystore.jks
 *.log.*
 *.log-*
 *.m4a
+*.py
 
 # compressed archives/backups
 *.tar

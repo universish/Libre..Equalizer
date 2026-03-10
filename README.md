@@ -1,5 +1,7 @@
 # Libre Equalizer
 
+[![Project Image](Resources/Comp 1 (0-00-00-00).jpg)](Resources/Comp 1 (0-00-00-00).jpg)
+
 **Libre Equalizer** is a free/libre, open-source (FLOSS), and Fully Free/Libre and privacy-focused Android Equalizer application.
 
 Source code is available from <https://codeberg.org/universish/Libre..Equalizer> or upon request; see Discussions on that repository for questions and how to obtain sources.

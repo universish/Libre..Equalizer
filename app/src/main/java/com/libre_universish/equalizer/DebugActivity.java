@@ -1,19 +1,25 @@
-/**
- * Created by Jazib on 2/11/2018.
+/*
+ * Created by Jazib (Jazib Khan) (Jazib Khan) on 2/10/2018.
+ * Created by Jazib on 2/10/2018.
+ * (Version 1.1 stated “Created by Jazib on 2/11/2018.” One of the subsequent versions stated “Created by Jazib (Jazib Khan) (Jazib Khan) on 2/10/2018.” Therefore, the dates were changed to the earlier date of “2/10/2018.”)
+ * 
  * Original Code Copyright (c) 2018 Jazib (Jazib Khan) (GitHub: j4zib)
  * Modifications Copyright (c) 2026 universish (Saffet Yavuz) (codeberg and GitHub: universish)
  * Modified by Saffet Yavuz (universish) on 01/02/2026 (dd/mm/yyyy)
- *
+ * 
  * The original package ID `com.jazibkhan.equalizer` was assigned by Jazib Khan.
  * The current package ID `com.libre_universish.equalizer` has been updated by Saffet Yavuz.
- *
+ * 
  * Licensed under the GNU General Public License v3.0
  * SPDX-License-Identifier: GPL-3.0-only
  */
 package com.libre_universish.equalizer;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.media.audiofx.Equalizer;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -23,14 +29,19 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.core.content.FileProvider;
-
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import java.util.regex.Pattern;
+
+/**
+ * Full‑screen diagnostics activity copied from the 3.5.3 base release.
+ * Provides step‑by‑step log capture, sanitization and optional e‑mail
+ * sending while preserving user privacy.  Additional header information
+ * (app version and device details) are prepended to the output to give
+ * more context for bug reports.
+ */
 
 public class DebugActivity extends Activity {
     private TextView text;
@@ -111,14 +122,63 @@ public class DebugActivity extends Activity {
 
     private void collectAndSanitizeLogs() {
         try {
+            // header with app/device info for context
+            String version = "";
+            try {
+                version = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
+            } catch (Exception ignore) { }
+            String header = "App version: " + version + "\n";
+            header += "Device: " + Build.MODEL + " (" + Build.DEVICE + ")\n";
+            header += "Brand: " + Build.BRAND + "\n";
+            header += "Manufacturer: " + Build.MANUFACTURER + "\n";
+            header += "Android Release: " + Build.VERSION.RELEASE + "\n";
+            header += "Android SDK: " + Build.VERSION.SDK_INT + "\n";
+            // include some preference and equalizer state to help debugging
+            android.content.SharedPreferences prefs =
+                    androidx.preference.PreferenceManager.getDefaultSharedPreferences(this);
+            header += "dark_theme=" + prefs.getBoolean("dark_theme", true) + "\n";
+            header += "eq_switch=" + prefs.getBoolean("eq_switch", true) + "\n";
+            header += "bass_switch=" + prefs.getBoolean("bB_switch", true) + "\n";
+            header += "virtual_switch=" + prefs.getBoolean("vir_switch", true) + "\n";
+            header += "loud_switch=" + prefs.getBoolean("loud_switch", true) + "\n";
+            try {
+                Equalizer eq = EffectInstance.getEqualizerInstance();
+                short bands = eq.getNumberOfBands();
+                header += "num_bands=" + bands + "\n";
+                for (short i = 0; i < bands && i < 5; i++) {
+                    header += "band" + i + "=" + eq.getBandLevel(i) + "\n";
+                }
+                short presets = eq.getNumberOfPresets();
+                header += "num_presets=" + presets + "\n";
+            } catch (Exception e) {
+                // ignore if no eq present
+            }
+            // audio manager info
+            android.media.AudioManager am = (android.media.AudioManager)getSystemService(Context.AUDIO_SERVICE);
+            if (am != null) {
+                int curVol = am.getStreamVolume(android.media.AudioManager.STREAM_MUSIC);
+                int maxVol = am.getStreamMaxVolume(android.media.AudioManager.STREAM_MUSIC);
+                header += "vol=" + curVol + "/" + maxVol + "\n";
+                header += "output_sr=" + am.getProperty(android.media.AudioManager.PROPERTY_OUTPUT_SAMPLE_RATE) + "\n";
+                header += "buffer=" + am.getProperty(android.media.AudioManager.PROPERTY_OUTPUT_FRAMES_PER_BUFFER) + "\n";
+                header += "devices=" + am.getDevices(android.media.AudioManager.GET_DEVICES_OUTPUTS).length + "\n";
+            }
+            // runtime memory
+            Runtime rt = Runtime.getRuntime();
+            header += "mem_free=" + rt.freeMemory() + "\n";
+            header += "mem_total=" + rt.totalMemory() + "\n";
+            header += "\n";
+
             Process proc = Runtime.getRuntime().exec(new String[]{
                     "logcat", "-d", "-v", "time",
                     "*:*"});
-            String raw = new java.io.BufferedReader(new java.io.InputStreamReader(proc.getInputStream()))
+            String raw = new java.io.BufferedReader(
+                    new java.io.InputStreamReader(proc.getInputStream()))
                     .lines().reduce("", (a, b) -> a + "\n" + b);
             proc.getInputStream().close();
 
-            String sanitized = sanitizeLog(raw);
+            raw = header + raw;
+            String sanitized = header + sanitizeLog(raw);
 
             String ts = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(new Date());
             File folder = new File(getExternalFilesDir(null), "debug_reports");

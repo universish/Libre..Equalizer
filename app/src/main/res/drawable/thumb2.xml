@@ -10,8 +10,8 @@
                 android:startColor="@color/colorAccent" />
 
             <size
-                android:height="20dp"
-                android:width="20dp" />
+                android:height="13dp"
+                android:width="13dp" />
 
         </shape>
     </item>

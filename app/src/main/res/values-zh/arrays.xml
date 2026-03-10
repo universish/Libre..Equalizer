@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="custom_preset_names">
+        <item>摇滚</item>
+        <item>流行</item>
+        <item>爵士</item>
+        <item>古典</item>
+        <item>嘻哈</item>
+        <item>低音增强</item>
+        <item>高音增强</item>
+        <item>原声</item>
+        <item>电子</item>
+        <item>平坦</item>
+        <item>正常</item>
+        <item>人声</item>
+        <item>金属</item>
+        <item>舞曲</item>
+        <item>雷鬼</item>
+        <item>乡村</item>
+        <item>蓝调</item>
+        <item>民谣</item>
+        <item>拉丁</item>
+        <item>R&amp;B</item>
+        <item>环境</item>
+        <item>放克</item>
+        <item>派对</item>
+        <item>柔和</item>
+        <item>硬摇滚</item>
+        <item>朋克</item>
+        <item>重低音</item>
+        <item>EDM</item>
+        <item>独立</item>
+        <item>人声增强</item>
+        <item>深沉</item>
+        <item>现场</item>
+        <item>录音室</item>
+        <item>放松</item>
+        <item>科技</item>
+        <item>浩室</item>
+        <item>合成</item>
+        <item>雷加顿</item>
+        <item>K-Pop</item>
+        <item>蒸汽波</item>
+        <item>鼓 &amp; 贝斯</item>
+        <item>斯卡</item>
+        <item>福音</item>
+        <item>Turkish Folk Song</item>
+        <item>Turkish Rock</item>
+        <item>Anatolian Rock</item>
+        <item>Turkish Pop</item>
+        <item>Turkish Slow Pop</item>
+        <item>Turkish Slow Rock</item>
+        <item>Turkish Metal</item>
+        <item>Turkish Emotional Music</item>
+        <item>Turkish Folk</item>
+        <item>Arabesque</item>
+        <item>Turkish Rap</item>
+        <item>Greek Taverna</item>
+        <item>Greek Rebetiko</item>
+        <item>Greek Pop</item>
+        <item>Greek Rock</item>
+        <item>Greek Folk</item>
+        <item>Laiko</item>
+        <item>Bouzouki</item>
+        <item>Greek Slow Pop</item>
+        <item>Greek Metal</item>
+    </string-array>
+</resources>

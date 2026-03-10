@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Libre Ekolayzer</string>
+    <string name="title_activity_settings">Ayarlar</string>
+    <string name="warning">Ses Güçlendiriciyi Dikkatli Kullanın</string>
+    <string name="disableOther">Bunu etkinleştirmeden önce diğer Ekolayzerleri devre dışı bırakın</string>
+    <string name="bass_boost">Bas Güçlendirme</string>
+    <string name="enable_equalizer">Ekolayzeri Etkinleştir</string>
+    <string name="presets">Ön Ayarlar</string>
+    <string name="virtualizer">Sanallaştırıcı</string>
+    <string name="loudness">Ses Güçlendirme</string>
+    <string name="system_volume">Sistem Sesi</string>
+    <string name="about">Hakkında</string>
+    <string name="settings">Ayarlar</string>
+    <string name="support_summary">Bu uygulamayı yüklediğiniz için teşekkürler. Uygulamayı beğendiyseniz ve emeğimin karşılığını almasını isterseniz, buradan para bırakabilirsiniz.</string>
+    <string name="donate">Bağış</string>
+    <string name="purchase_thanks">Desteğiniz için teşekkürler.</string>
+    <string name="menu_diagnostics">Teşhis</string>
+    <string name="pref_title_language">Dil</string>
+    <string name="pref_title_dark_theme">Koyu Tema</string>
+    <string name="lang_english">English</string>
+    <string name="lang_finnish">Suomi</string>
+    <string name="lang_turkish">Türkçe</string>
+    <string name="lang_dutch">Nederlands</string>
+    <string name="lang_german">Deutsch</string>
+    <string name="lang_spanish">Español</string>
+    <string name="lang_swedish">Svenska</string>
+    <string name="lang_french">Français</string>
+    <string name="lang_hindi">हिंदी</string>
+    <string name="lang_italian">Italiano</string>
+    <string name="lang_portuguese">Português</string>
+    <string name="lang_norwegian">Norsk</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_polish">Polski</string>
+    <string name="lang_chinese">中文</string>
+    <string name="lang_danish">Dansk</string>
+    <string name="lang_greek">Ελληνικά</string>
+    <string name="lang_albanian">Shqip</string>
+    <string name="lang_armenian">Հայերեն</string>
+    <string name="lang_kurdish">Kurdî</string>
+    <string name="lang_kazakh">Қазақша</string>
+    <string name="lang_kyrgyz">Кыргызча</string>
+    <string name="lang_luxembourgish">Lëtzebuergesch</string>
+    <string name="lang_korean">한국어</string>
+    <string name="lang_japanese">日本語</string>
+    <string name="pref_title_check_updates">Güncellemeleri kontrol et</string>
+    <string name="pref_summary_check_updates">Yayın etiketleri sayfasını aç</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="licenses">Lisanslar</string>
+    <string name="report_bugs">Hataları Bildir</string>
+    <string name="fork_on_github">Codeberg\'de Forkla</string>
+    <string name="rate">Puanla</string>
+    <string name="rate_app">Uygulamayı e-posta ile puanla</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">Tüm cihazlar için Açık Kaynaklı, Hafif Bir Ekolayzer.</string>
+    <string name="preset_name">Ön Ayar Adı</string>
+    <string name="purchased_successfully">Başarıyla Satın Alındı</string>
+    <string name="eq_is_enabled">Ekolayzer etkinleştirildi</string>
+    <string name="load_preset">Ön Ayar Yükle</string>
+    <string name="preset_deleted_successfully">Ön ayar başarıyla silindi</string>
+    <string name="delete_preset">Ön Ayarı Sil</string>
+    <string name="please_save_preset">Lütfen önce bir Ön Ayar kaydedin</string>
+    <string name="cancel">İptal</string>
+    <string name="save_as_preset">Ön Ayar Olarak Kaydet</string>
+    <string name="save">KAYDET</string>
+    <string name="please_enter_preset">Lütfen Ön Ayarın Adını Girin</string>
+    <string name="preset_saved_successfully">Ön Ayar Başarıyla Kaydedildi</string>
+
+    
+
+    
+    <string name="pref_header_general" translatable="false">General</string>
+    <string name="pref_title_social_recommendations" translatable="false">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations" translatable="false">Recommendations for people to contact
+        based on your message history
+    </string>
+    <string name="pref_title_display_name" translatable="false">Display name</string>
+    <string name="pref_default_display_name" translatable="false">Maria Papadopoulou</string>
+    <string name="pref_title_add_friends_to_messages" translatable="false">Add friends to messages</string>
+    <string-array name="pref_example_list_titles" translatable="false">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values" translatable="false">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string name="pref_header_data_sync" translatable="false">Data &amp; sync</string>
+    <string name="pref_title_sync_frequency" translatable="false">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles" translatable="false">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values" translatable="false">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="list_preference_entries" translatable="false">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+    <string-array name="list_preference_entry_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="multi_select_list_preference_default_value" translatable="false" />
+    <string name="pref_title_system_title" translatable="false">System Title</string>
+    <string name="pref_header_notifications" translatable="false">Notifications</string>
+    <string name="pref_title_new_message_notifications" translatable="false">New message notifications</string>
+    <string name="pref_title_ringtone" translatable="false">Ringtone</string>
+    <string name="pref_ringtone_silent" translatable="false">Silent</string>
+    <string name="pref_title_vibrate" translatable="false">Vibrate</string>
+    <string name="pref_title_system_sync_settings" translatable="false">System sync settings</string>
+    <string name="any_donation_will_remove_the_ads">Bei jeder Spende werden die Anzeigen entfernt.</string>
+</resources>

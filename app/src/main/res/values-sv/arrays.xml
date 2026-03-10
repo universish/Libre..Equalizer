@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="custom_preset_names">
+        <item>Rock</item>
+        <item>Pop</item>
+        <item>Jazz</item>
+        <item>Klassisk</item>
+        <item>Hiphop</item>
+        <item>Bass Boost</item>
+        <item>Treble Boost</item>
+        <item>Akustisk</item>
+        <item>Elektronisk</item>
+        <item>Platt</item>
+        <item>Normal</item>
+        <item>Vokal</item>
+        <item>Metal</item>
+        <item>Dance</item>
+        <item>Reggae</item>
+        <item>Country</item>
+        <item>Blues</item>
+        <item>Folk</item>
+        <item>Latin</item>
+        <item>R&amp;B</item>
+        <item>Ambient</item>
+        <item>Funk</item>
+        <item>Fest</item>
+        <item>Mjuk</item>
+        <item>Hard Rock</item>
+        <item>Punk</item>
+        <item>Dubstep</item>
+        <item>EDM</item>
+        <item>Indie</item>
+        <item>Vokal Boost</item>
+        <item>Djup</item>
+        <item>Live</item>
+        <item>Studio</item>
+        <item>Chill</item>
+        <item>Techno</item>
+        <item>House</item>
+        <item>Synth</item>
+        <item>Reggaeton</item>
+        <item>K-Pop</item>
+        <item>Vaporwave</item>
+        <item>Drum &amp; Bass</item>
+        <item>Ska</item>
+        <item>Gospel</item>
+        <item>Turkish Folk Song</item>
+        <item>Turkish Rock</item>
+        <item>Anatolian Rock</item>
+        <item>Turkish Pop</item>
+        <item>Turkish Slow Pop</item>
+        <item>Turkish Slow Rock</item>
+        <item>Turkish Metal</item>
+        <item>Turkish Emotional Music</item>
+        <item>Turkish Folk</item>
+        <item>Arabesque</item>
+        <item>Turkish Rap</item>
+        <item>Greek Taverna</item>
+        <item>Greek Rebetiko</item>
+        <item>Greek Pop</item>
+        <item>Greek Rock</item>
+        <item>Greek Folk</item>
+        <item>Laiko</item>
+        <item>Bouzouki</item>
+        <item>Greek Slow Pop</item>
+        <item>Greek Metal</item>
+    </string-array>
+</resources>

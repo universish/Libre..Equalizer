@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lang_names">
+        <item>@string/lang_english</item>
+        <item>@string/lang_finnish</item>
+        <item>@string/lang_turkish</item>
+        <item>@string/lang_dutch</item>
+        <item>@string/lang_german</item>
+        <item>@string/lang_spanish</item>
+        <item>@string/lang_swedish</item>
+        <item>@string/lang_french</item>
+        <item>@string/lang_hindi</item>
+        <item>@string/lang_italian</item>
+        <item>@string/lang_portuguese</item>
+        <item>@string/lang_norwegian</item>
+        <item>@string/lang_russian</item>
+        <item>@string/lang_polish</item>
+        <item>@string/lang_chinese</item>
+        <!-- additional languages requested -->
+        <item>@string/lang_danish</item>
+        <item>@string/lang_greek</item>
+        <item>@string/lang_albanian</item>
+        <item>@string/lang_armenian</item>
+        <item>@string/lang_kurdish</item>
+        <item>@string/lang_kazakh</item>
+        <item>@string/lang_kyrgyz</item>
+        <item>@string/lang_luxembourgish</item>
+        <item>@string/lang_korean</item>
+        <item>@string/lang_japanese</item>
+    </string-array>
+    <string-array name="lang_values">
+        <item>en</item> <!-- English -->
+        <item>fi</item> <!-- Finnish -->
+        <item>tr</item> <!-- Turkish -->
+        <item>nl</item> <!-- Dutch -->
+        <item>de</item> <!-- German -->
+        <item>es</item> <!-- Spanish -->
+        <item>sv</item> <!-- Swedish -->
+        <item>fr</item> <!-- French -->
+        <item>hi</item> <!-- Hindi -->
+        <item>it</item> <!-- Italian -->
+        <item>pt</item> <!-- Portuguese -->
+        <item>no</item> <!-- Norwegian -->
+        <item>ru</item> <!-- Russian -->
+        <item>pl</item> <!-- Polish -->
+        <item>zh</item> <!-- Chinese -->
+        <!-- codes for new entries; some are unofficial placeholders -->
+        <item>da</item> <!-- Danish -->
+        <item>el</item> <!-- Greek -->
+        <item>sq</item> <!-- Albanian -->
+        <item>hy</item> <!-- Armenian -->
+        <item>ku</item> <!-- Kurdish -->
+        <item>kk</item> <!-- Kazakh -->
+        <item>ky</item> <!-- Kyrgyz -->
+        <item>lb</item> <!-- Luxembourgish -->
+        <item>ko</item> <!-- Korean -->
+        <item>ja</item> <!-- Japanese -->
+    </string-array>
+
+    <!-- fallback preset names; localizations in values-<lang>/arrays.xml -->
+    <string-array name="custom_preset_names">
+        <item>Rock</item>
+        <item>Pop</item>
+        <item>Jazz</item>
+        <item>Classical</item>
+        <item>HipHop</item>
+        <item>Bass Boost</item>
+        <item>Treble Boost</item>
+        <item>Acoustic</item>
+        <item>Electronic</item>
+        <item>Flat</item>
+        <item>Normal</item>
+        <item>Vocal</item>
+        <item>Metal</item>
+        <item>Dance</item>
+        <item>Reggae</item>
+        <item>Country</item>
+        <item>Blues</item>
+        <item>Folk</item>
+        <item>Latin</item>
+        <item>R&amp;B</item>
+        <item>Ambient</item>
+        <item>Funk</item>
+        <item>Party</item>
+        <item>Soft</item>
+        <item>Hard Rock</item>
+        <item>Punk</item>
+        <item>Dubstep</item>
+        <item>EDM</item>
+        <item>Indie</item>
+        <item>Vocal Boost</item>
+        <item>Deep</item>
+        <item>Live</item>
+        <item>Studio</item>
+        <item>Chill</item>
+        <item>Techno</item>
+        <item>House</item>
+        <item>Synth</item>
+        <item>Reggaeton</item>
+        <item>K-Pop</item>
+        <item>Vaporwave</item>
+        <item>Drum &amp; Bass</item>
+        <item>Ska</item>
+        <item>Gospel</item>
+        <item>Turkish Folk Song</item>
+        <item>Turkish Rock</item>
+        <item>Anatolian Rock</item>
+        <item>Turkish Pop</item>
+        <item>Turkish Slow Pop</item>
+        <item>Turkish Slow Rock</item>
+        <item>Turkish Metal</item>
+        <item>Turkish Emotional Music</item>
+        <item>Turkish Folk</item>
+        <item>Arabesque</item>
+        <item>Turkish Rap</item>
+        <item>Greek Taverna</item>
+        <item>Greek Rebetiko</item>
+        <item>Greek Pop</item>
+        <item>Greek Rock</item>
+        <item>Greek Folk</item>
+        <item>Laiko</item>
+        <item>Bouzouki</item>
+        <item>Greek Slow Pop</item>
+        <item>Greek Metal</item>
+    </string-array>
+    <string-array name="custom_preset_keys">
+        <item>rock</item>
+        <item>pop</item>
+        <item>jazz</item>
+        <item>classical</item>
+        <item>hiphop</item>
+        <item>bass_boost</item>
+        <item>treble_boost</item>
+        <item>acoustic</item>
+        <item>electronic</item>
+        <item>flat</item>
+        <item>normal</item>
+        <item>vocal</item>
+        <item>metal</item>
+        <item>dance</item>
+        <item>reggae</item>
+        <item>country</item>
+        <item>blues</item>
+        <item>folk</item>
+        <item>latin</item>
+        <item>rnb</item>
+        <item>ambient</item>
+        <item>funk</item>
+        <item>party</item>
+        <item>soft</item>
+        <item>hard_rock</item>
+        <item>punk</item>
+        <item>dubstep</item>
+        <item>edm</item>
+        <item>indie</item>
+        <item>vocal_boost</item>
+        <item>deep</item>
+        <item>live</item>
+        <item>studio</item>
+        <item>chill</item>
+        <item>techno</item>
+        <item>house</item>
+        <item>synth</item>
+        <item>reggaeton</item>
+        <item>kpop</item>
+        <item>vaporwave</item>
+        <item>drum_bass</item>
+        <item>ska</item>
+        <item>gospel</item>
+        <item>turkish_folk_song</item>
+        <item>turkish_rock</item>
+        <item>anatolian_rock</item>
+        <item>turkish_pop</item>
+        <item>turkish_slow_pop</item>
+        <item>turkish_slow_rock</item>
+        <item>turkish_metal</item>
+        <item>turkish_emotional</item>
+        <item>turkish_folk</item>
+        <item>arabesque</item>
+        <item>turkish_rap</item>
+        <item>greek_taverna</item>
+        <item>greek_rebetiko</item>
+        <item>greek_pop</item>
+        <item>greek_rock</item>
+        <item>greek_folk</item>
+        <item>laiko</item>
+        <item>bouzouki</item>
+        <item>greek_slow_pop</item>
+        <item>greek_metal</item>
+    </string-array>
+</resources>

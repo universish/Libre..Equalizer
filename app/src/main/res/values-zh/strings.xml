@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Equalizer</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="warning">小心使用响度增强器</string>
+    <string name="disableOther">在启用此功能之前禁用其他均衡器</string>
+    <string name="bass_boost">低音增强</string>
+    <string name="enable_equalizer">启用均衡器</string>
+    <string name="presets">预置</string>
+    <string name="virtualizer">虚拟器</string>
+    <string name="loudness">响度</string>
+    <string name="system_volume">系统音量</string>
+    <string name="about">关于</string>
+    <string name="settings">设置</string>
+    <string name="support_summary">感谢您安装此应用。如果您喜欢我的应用程序，并且您认为我应该为我的工作获得报酬，那么您可以在这里留下一些钱。任何购买都会删除广告。</string>
+    <string name="purchase_thanks">谢谢你的采购。所有广告都已删除。</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="menu_diagnostics">诊断</string>
+    <string name="licenses">许可证</string>
+    <string name="report_bugs">报告错误</string>
+    <string name="fork_on_github">在GitHub上分叉</string>
+    <string name="any_donation_will_remove_the_ads">任何捐赠都将删除广告。</string>
+    <string name="donate">捐</string>
+    <string name="rate">率</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">适用于所有设备的开源，轻量均衡器。</string>
+    <string name="preset_name">预设名称</string>
+    <string name="purchased_successfully">购买成功</string>
+    <string name="eq_is_enabled">均衡器已启用</string>
+    <string name="load_preset">加载预设</string>
+    <string name="preset_deleted_successfully">预设已成功删除</string>
+    <string name="delete_preset">删除预设</string>
+    <string name="please_save_preset">请先保存预设</string>
+    <string name="cancel">取消</string>
+    <string name="save_as_preset">另存为预设</string>
+    <string name="save">保存</string>
+    <string name="please_enter_preset">请输入预设的名称</string>
+    <string name="preset_saved_successfully">预设已成功保存</string>
+    <string name="pref_title_language">Language</string>
+    <string name="pref_title_dark_theme">Dark Theme</string>
+    <string name="lang_english">English</string>
+    <string name="lang_finnish">Suomi</string>
+    <string name="lang_turkish">Türkçe</string>
+    <string name="lang_dutch">Nederlands</string>
+    <string name="lang_german">Deutsch</string>
+    <string name="lang_spanish">Español</string>
+    <string name="lang_swedish">Svenska</string>
+    <string name="lang_french">Français</string>
+    <string name="lang_hindi">हिंदी</string>
+    <string name="lang_italian">Italiano</string>
+    <string name="lang_portuguese">Português</string>
+    <string name="lang_norwegian">Norsk</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_polish">Polski</string>
+    <string name="lang_chinese">中文</string>
+    <string name="lang_danish">Dansk</string>
+    <string name="lang_greek">Ελληνικά</string>
+    <string name="lang_albanian">Shqip</string>
+    <string name="lang_armenian">Հայերեն</string>
+    <string name="lang_kurdish">Kurdî</string>
+    <string name="lang_kazakh">Қазақша</string>
+    <string name="lang_kyrgyz">Кыргызча</string>
+    <string name="lang_luxembourgish">Lëtzebuergesch</string>
+    <string name="lang_korean">한국어</string>
+    <string name="lang_japanese">日本語</string>
+    <string name="pref_title_check_updates">Check for updates</string>
+    <string name="pref_summary_check_updates">Open release tags page</string>
+    <string name="rate_app">Rate this app via email</string>
+    <string name="pref_header_general" translatable="false">General</string>
+    <string name="pref_title_social_recommendations" translatable="false">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations" translatable="false">Recommendations for people to contact
+        based on your message history
+    </string>
+    <string name="pref_title_display_name" translatable="false">Display name</string>
+    <string name="pref_default_display_name" translatable="false">Maria Papadopoulou</string>
+    <string name="pref_title_add_friends_to_messages" translatable="false">Add friends to messages</string>
+    <string-array name="pref_example_list_titles" translatable="false">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values" translatable="false">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string name="pref_header_data_sync" translatable="false">Data &amp; sync</string>
+    <string name="pref_title_sync_frequency" translatable="false">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles" translatable="false">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values" translatable="false">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="list_preference_entries" translatable="false">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+    <string-array name="list_preference_entry_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="multi_select_list_preference_default_value" translatable="false" />
+    <string name="pref_title_system_title" translatable="false">System Title</string>
+    <string name="pref_header_notifications" translatable="false">Notifications</string>
+    <string name="pref_title_new_message_notifications" translatable="false">New message notifications</string>
+    <string name="pref_title_ringtone" translatable="false">Ringtone</string>
+    <string name="pref_ringtone_silent" translatable="false">Silent</string>
+    <string name="pref_title_vibrate" translatable="false">Vibrate</string>
+    <string name="pref_title_system_sync_settings" translatable="false">System sync settings</string>
+    </resources>

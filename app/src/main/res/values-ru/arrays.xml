@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="custom_preset_names">
+        <item>Рок</item>
+        <item>Поп</item>
+        <item>Джаз</item>
+        <item>Классика</item>
+        <item>Хип-хоп</item>
+        <item>Усиление басов</item>
+        <item>Усиление высоких</item>
+        <item>Акустика</item>
+        <item>Электронная</item>
+        <item>Плоский</item>
+        <item>Нормальный</item>
+        <item>Вокал</item>
+        <item>Метал</item>
+        <item>Танцевальная</item>
+        <item>Регги</item>
+        <item>Кантри</item>
+        <item>Блюз</item>
+        <item>Фолк</item>
+        <item>Латина</item>
+        <item>R&amp;B</item>
+        <item>Эмбиент</item>
+        <item>Фанк</item>
+        <item>Вечеринка</item>
+        <item>Мягкий</item>
+        <item>Хард-рок</item>
+        <item>Панк</item>
+        <item>Дабстеп</item>
+        <item>EDM</item>
+        <item>Инди</item>
+        <item>Усиление вокала</item>
+        <item>Глубокий</item>
+        <item>Живой</item>
+        <item>Студийный</item>
+        <item>Чил</item>
+        <item>Техно</item>
+        <item>Хаус</item>
+        <item>Синт</item>
+        <item>Реггетон</item>
+        <item>K-Pop</item>
+        <item>Вейпорвейв</item>
+        <item>Drum &amp; Bass</item>
+        <item>Ска</item>
+        <item>Госпел</item>
+        <item>Turkish Folk Song</item>
+        <item>Turkish Rock</item>
+        <item>Anatolian Rock</item>
+        <item>Turkish Pop</item>
+        <item>Turkish Slow Pop</item>
+        <item>Turkish Slow Rock</item>
+        <item>Turkish Metal</item>
+        <item>Turkish Emotional Music</item>
+        <item>Turkish Folk</item>
+        <item>Arabesque</item>
+        <item>Turkish Rap</item>
+        <item>Greek Taverna</item>
+        <item>Greek Rebetiko</item>
+        <item>Greek Pop</item>
+        <item>Greek Rock</item>
+        <item>Greek Folk</item>
+        <item>Laiko</item>
+        <item>Bouzouki</item>
+        <item>Greek Slow Pop</item>
+        <item>Greek Metal</item>
+    </string-array>
+</resources>

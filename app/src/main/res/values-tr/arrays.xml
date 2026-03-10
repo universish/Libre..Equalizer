@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="custom_preset_names">
+        <item>Rock</item>
+        <item>Pop</item>
+        <item>Jazz</item>
+        <item>Klasik</item>
+        <item>HipHop</item>
+        <item>Bas Güçlendirme</item>
+        <item>Üst Ton Güçlendirme</item>
+        <item>Akustik</item>
+        <item>Elektronik</item>
+        <item>Düz</item>
+        <item>Normal</item>
+        <item>Vokal</item>
+        <item>Metal</item>
+        <item>Dans</item>
+        <item>Reggae</item>
+        <item>Kountry</item>
+        <item>Blues</item>
+        <item>Folk</item>
+        <item>Latin</item>
+        <item>R&amp;B</item>
+        <item>Ambient</item>
+        <item>Funk</item>
+        <item>Parti</item>
+        <item>Yumuşak</item>
+        <item>Hard Rock</item>
+        <item>Punk</item>
+        <item>Dubstep</item>
+        <item>EDM</item>
+        <item>Indie</item>
+        <item>Vokal Güçlendirme</item>
+        <item>Derin</item>
+        <item>Canlı</item>
+        <item>Stüdyo</item>
+        <item>Chill</item>
+        <item>Techno</item>
+        <item>House</item>
+        <item>Synth</item>
+        <item>Reggaeton</item>
+        <item>K-Pop</item>
+        <item>Vaporwave</item>
+        <item>Drum &amp; Bass</item>
+        <item>Ska</item>
+        <item>Gospel</item>
+        <item>Türkü</item>
+        <item>Türk Rock</item>
+        <item>Anadolu Rock</item>
+        <item>Türk Pop</item>
+        <item>Türk Yavaş Pop</item>
+        <item>Türk Yavaş Rock</item>
+        <item>Türk Metal</item>
+        <item>Türk Duygusal Müzik</item>
+        <item>Türk Halk</item>
+        <item>Arabesk</item>
+        <item>Türkçe Rap</item>
+        <item>Yunan Taverna</item>
+        <item>Yunan Rebetiko</item>
+        <item>Yunan Pop</item>
+        <item>Yunan Rock</item>
+        <item>Yunan Folk</item>
+        <item>Laiko</item>
+        <item>Bouzouki</item>
+        <item>Yunan Yavaş Pop</item>
+        <item>Yunan Metal</item>
+    </string-array>
+</resources>

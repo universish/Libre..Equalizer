@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Libre Equalizer</string>
+    <string name="title_activity_settings">Astellungen</string>
+    <string name="warning">Benotzt Loudness Enhancer mat Virsiicht</string>
+    <string name="disableOther">Deaktivéiert aner Equalizers ier Dir dëst aktivéiert</string>
+    <string name="bass_boost">Bas Boost</string>
+    <string name="enable_equalizer">Aktivéiert Equalizer</string>
+    <string name="presets">Virastellungen</string>
+    <string name="virtualizer">Virtualisateur</string>
+    <string name="loudness">Loudness</string>
+    <string name="system_volume">System Volume</string>
+    <string name="about">Iwwer</string>
+    <string name="settings">Astellungen</string>
+    <string name="support_summary">Merci datt Dir dës App installéiert hutt. Wann Dir meng App gär hutt an denkt datt ech verdéngen fir bezuelt ze ginn fir meng Aarbecht, kënnt Dir hei e bësse Suen hannerloossen.</string>
+    <string name="donate">Donéieren</string>
+    <string name="purchase_thanks">Merci fir Är Ënnerstëtzung.</string>
+    <string name="menu_diagnostics">Diagnostik</string>
+    <string name="pref_title_language">Sprooch</string>
+    <string name="pref_title_dark_theme">Donkel Thema</string>
+    <string name="lang_english">English</string>
+    <string name="lang_finnish">Suomi</string>
+    <string name="lang_turkish">Türkçe</string>
+    <string name="lang_dutch">Nederlands</string>
+    <string name="lang_german">Deutsch</string>
+    <string name="lang_spanish">Español</string>
+    <string name="lang_swedish">Svenska</string>
+    <string name="lang_french">Français</string>
+    <string name="lang_hindi">हिंदी</string>
+    <string name="lang_italian">Italiano</string>
+    <string name="lang_portuguese">Português</string>
+    <string name="lang_norwegian">Norsk</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_polish">Polski</string>
+    <string name="lang_chinese">中文</string>
+    <string name="lang_danish">Dansk</string>
+    <string name="lang_greek">Ελληνικά</string>
+    <string name="lang_albanian">Shqip</string>
+    <string name="lang_armenian">Հայերեն</string>
+    <string name="lang_kurdish">Kurdî</string>
+    <string name="lang_kazakh">Қазақша</string>
+    <string name="lang_kyrgyz">Кыргызча</string>
+    <string name="lang_luxembourgish">Lëtzebuergesch</string>
+    <string name="lang_korean">한국어</string>
+    <string name="lang_japanese">日本語</string>
+    <string name="pref_title_check_updates">Iwwerpréift fir Aktualiséierungen</string>
+    <string name="pref_summary_check_updates">Maacht d Säit vun de Verëffentlechungs-Tags op</string>
+    <string name="privacy_policy">Dateschutzrichtlinn</string>
+    <string name="licenses">Lizenzen</string>
+    <string name="report_bugs">Feeler Mellen</string>
+    <string name="fork_on_github">Fork op Codeberg</string>
+    <string name="rate">Bewäerten</string>
+    <string name="rate_app">Bewäert dës App per E-Mail</string>
+    <string name="an_open_source_light_weight_equalizer_for_all_devices">En Open Source, Liicht Equalizer fir all Apparater.</string>
+    <string name="preset_name">Virastellung Numm</string>
+    <string name="purchased_successfully">Erfollegräich Kaaft</string>
+    <string name="eq_is_enabled">Equalizer ass aktivéiert</string>
+    <string name="load_preset">Lued Virastellung</string>
+    <string name="preset_deleted_successfully">Virastellung erfollegräich geläscht</string>
+    <string name="delete_preset">Läscht Virastellung</string>
+    <string name="please_save_preset">Späichert w.e.g. eng Virastellung als éischt</string>
+    <string name="cancel">Ofbriechen</string>
+    <string name="save_as_preset">Späicheren Als Virastellung</string>
+    <string name="save">SPÄICHEREN</string>
+    <string name="please_enter_preset">Gitt w.e.g. den Numm vun der Virastellung an</string>
+    <string name="preset_saved_successfully">Virastellung erfollegräich gespäichert</string>
+    <string name="pref_header_general" translatable="false">General</string>
+    <string name="pref_title_social_recommendations" translatable="false">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations" translatable="false">Recommendations for people to contact
+        based on your message history
+    </string>
+    <string name="pref_title_display_name" translatable="false">Display name</string>
+    <string name="pref_default_display_name" translatable="false">Maria Papadopoulou</string>
+    <string name="pref_title_add_friends_to_messages" translatable="false">Add friends to messages</string>
+    <string-array name="pref_example_list_titles" translatable="false">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values" translatable="false">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string name="pref_header_data_sync" translatable="false">Data &amp; sync</string>
+    <string name="pref_title_sync_frequency" translatable="false">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles" translatable="false">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values" translatable="false">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="list_preference_entries" translatable="false">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+    <string-array name="list_preference_entry_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="multi_select_list_preference_default_value" translatable="false" />
+    <string name="pref_title_system_title" translatable="false">System Title</string>
+    <string name="pref_header_notifications" translatable="false">Notifications</string>
+    <string name="pref_title_new_message_notifications" translatable="false">New message notifications</string>
+    <string name="pref_title_ringtone" translatable="false">Ringtone</string>
+    <string name="pref_ringtone_silent" translatable="false">Silent</string>
+    <string name="pref_title_vibrate" translatable="false">Vibrate</string>
+    <string name="pref_title_system_sync_settings" translatable="false">System sync settings</string>
+    <string name="any_donation_will_remove_the_ads">Any donation will remove the ads.</string>
+    </resources>
