@@ -29,7 +29,7 @@ import android.os.Bundle;
 import com.libre_universish.equalizer.R;
 import com.libre_universish.equalizer.R;
 
-@Database(entities = {CustomPreset.class}, version = 1)
+@Database(entities = {CustomPreset.class}, version = 1, exportSchema = false)
 @TypeConverters({ArrayConverter.class})
 public abstract class AppDatabase extends RoomDatabase {
     public abstract CustomPresetDAO entryDAO();
