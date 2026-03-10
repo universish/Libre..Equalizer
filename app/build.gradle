@@ -30,24 +30,6 @@ android {
         keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
     }
 
-    signingConfigs {
-        debug {
-            if (debugFile.exists() && debugProps.containsKey('keystore.file')) {
-                storeFile file(debugProps['keystore.file'])
-                storePassword debugProps['keystore.password']
-                keyAlias debugProps['key.alias']
-                keyPassword debugProps['key.password']
-            }
-        }
-        release {
-            if (keystorePropertiesFile.exists() && keystoreProperties.containsKey('keystore.file')) {
-                storeFile file(keystoreProperties['keystore.file'])
-                storePassword keystoreProperties['keystore.password']
-                keyAlias keystoreProperties['key.alias']
-                keyPassword keystoreProperties['key.password']
-            }
-        }
-    }
 
     buildTypes {
         release {
@@ -82,8 +64,10 @@ android {
 androidComponents {
     onVariants(selector().all()) { variant ->
         variant.outputs.forEach { output ->
-            // only variant name is reliably available
-            output.outputFileName.set("libre_universish-equalizer-${variant.name}.apk")
+            // include versionName and versionCode in file name
+            def vName = variant.versionName ?: ""
+            def vCode = variant.versionCode ?: ""
+            output.outputFileName.set("libre_universish-equalizer-v${vName}-vc_${vCode}-${variant.name}.apk")
         }
     }
 }
