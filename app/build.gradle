@@ -13,11 +13,40 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
+
+// debug signing configuration
+
+    def debugProps = new Properties()
+    def debugFile = rootProject.file("debugkey.properties")
+    if (debugFile.exists()) {
+    debugProps.load(new FileInputStream(debugFile))
+    }
+
+// release stable signing conf.
+
+    def keystorePropertiesFile = rootProject.file("releasekey.properties")
+    def keystoreProperties = new Properties()
+    if (keystorePropertiesFile.exists()) {
+        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+    }
+
+    signingConfigs {
+        release {
+            if (keystorePropertiesFile.exists() && keystoreProperties.containsKey('keystore.file')) {
+                storeFile file(keystoreProperties['keystore.file'])
+                storePassword keystoreProperties['keystore.password']
+                keyAlias keystoreProperties['key.alias']
+                keyPassword keystoreProperties['key.password']
+            }
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled = true
             shrinkResources = true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
         debug {
             minifyEnabled = false
@@ -45,7 +74,7 @@ androidComponents {
     onVariants(selector().all()) { variant ->
         variant.outputs.forEach { output ->
             // only variant name is reliably available
-            output.outputFileName.set("libre_universish-${variant.name}.apk")
+            output.outputFileName.set("libre_universish-equalizer-${variant.name}.apk")
         }
     }
 }
