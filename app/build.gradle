@@ -62,9 +62,9 @@ android {
 androidComponents {
     onVariants(selector().all()) { variant ->
         variant.outputs.forEach { output ->
-            // include versionName and versionCode in file name
-            def vName = variant.versionName ?: ""
-            def vCode = variant.versionCode ?: ""
+            // include versionName and versionCode in file name (use defaultConfig values)
+            def vName = project.android.defaultConfig.versionName
+            def vCode = project.android.defaultConfig.versionCode
             output.outputFileName.set("libre_universish-equalizer-v${vName}-vc_${vCode}-${variant.name}.apk")
         }
     }
