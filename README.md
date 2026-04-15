@@ -2,6 +2,11 @@
 
 Visit [the website of the forked repository](https://codeberg.org/universish/Libre..Equalizer) to review the source files.
 
+----
+
+[![Project Image](Resources/Libre..Eq.jpg)](Resources/Libre..Eq.jpg)
+
+----
 
 Source by @JazibOfficial's archive repo(softwareheritage) @j4zib's github repo.
 This project is @JazibOfficial(@j4zib J. Khan)'s Flat Equalizer's fork.
