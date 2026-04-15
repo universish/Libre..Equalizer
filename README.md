@@ -1,9 +1,13 @@
-# Flat Equalizer
+# Libre Equalizer
 
-![enter image description here](https://github.com/JazibOfficial/Equalizer/blob/master/Resources/Comp%201%20%280-00-00-00%29.jpg?raw=true)
-This is a light weight, open source Equalizer & Bass Boost for Android 4.4+.
+Visit [the website of the forked repository](https://codeberg.org/universish/Libre..Equalizer) to review the source files.
 
-**Play Store Link:** [https://play.google.com/store/apps/details?id=com.jazibkhan.equalizer](https://play.google.com/store/apps/details?id=com.jazibkhan.equalizer)
+
+Source by @JazibOfficial's archive repo(softwareheritage) @j4zib's github repo.
+This project is @JazibOfficial(@j4zib J. Khan)'s Flat Equalizer's fork.
+
+
+This is a light weight, open source Equalizer & Bass Boost for Android 4.4+ - Android 15 (SDK 36)
 
 Simple equalizer and bass boost for your phone that follows google's material design.  
   
